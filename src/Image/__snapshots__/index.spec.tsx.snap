@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FluidImage - Image Renders an img with full props 1`] = `
+<img
+  alt="some description"
+  draggable={false}
+  onLoad={[Function]}
+  src="testImage.jpeg"
+  style={
+    Object {
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "opacity": 1,
+      "position": "relative",
+      "transition": "opacity 0.6s",
+      "zIndex": 1,
+    }
+  }
+  title="some title"
+/>
+`;
+
+exports[`FluidImage - Image Renders an img with minimal props 1`] = `
+<img
+  alt={undefined}
+  draggable={false}
+  onLoad={[Function]}
+  src="testImage.jpeg"
+  style={
+    Object {
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "opacity": 0,
+      "position": "relative",
+      "transition": "opacity 0.6s",
+      "zIndex": 1,
+    }
+  }
+  title={undefined}
+/>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FluidImage - Placeholder it renders a span with full props 1`] = `
+<span
+  style={
+    Object {
+      "backgroundColor": "#f9f9f9",
+      "display": "inline-block",
+      "height": 0,
+      "lineHeight": 0,
+      "overflow": "hidden",
+      "paddingBottom": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  children
+</span>
+`;
+
+exports[`FluidImage - Placeholder it renders a span with minimal props 1`] = `
+<span
+  style={
+    Object {
+      "backgroundColor": "#f9f9f9",
+      "display": "inline-block",
+      "height": 0,
+      "lineHeight": 0,
+      "overflow": "hidden",
+      "paddingBottom": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+/>
+`;
