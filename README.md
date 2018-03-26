@@ -16,3 +16,4 @@ React based component for efficiently and effectively displaying images
 - Automatic code quality automation [Codacy](http://codacy.com/)
 - Automatic performance reporting and monitoring e.g 10/100/1000 elements
 - Storybook static deploy
+- Automated testing Coverage reporting and display
