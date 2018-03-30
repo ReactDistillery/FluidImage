@@ -33,7 +33,6 @@
     "react-dom": "^16.2.0",
     "react-intersection-observer": "^3.0.3",
     "react-measure": "^2.0.2",
-    "res": "^0.4.0",
     "tslib": "^1.9.0"
   },
   "scripts": {
