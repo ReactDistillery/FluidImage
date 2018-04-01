@@ -1,5 +1,4 @@
 language: node_js
-install: yarn
 jobs:
   include:
     - stage: test
