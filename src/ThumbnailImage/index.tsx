@@ -7,6 +7,7 @@ export interface ThumbnailImageProps {
   hasImageLoaded?: boolean;
   hideImageOnLoad?: boolean;
   onLoad: Function;
+  onError?: Function;
 }
 
 const styles: React.CSSProperties = {
@@ -21,6 +22,7 @@ const styles: React.CSSProperties = {
 
 const ThumbnailImage = ({
   onLoad,
+  onError,
   hasImageLoaded = false,
   hideImageOnLoad = false,
   title,
@@ -28,7 +30,8 @@ const ThumbnailImage = ({
   src
 }: ThumbnailImageProps) => (
   <img
-    onLoad={() => onLoad()}
+    onLoad={(event) => onLoad(event)}
+    onError={(event) => onError && onError(event)}
     src={src}
     title={title}
     style={{

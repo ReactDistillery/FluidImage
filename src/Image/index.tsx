@@ -6,6 +6,7 @@ export interface ImageProps {
   title?: string;
   hasImageLoaded?: boolean;
   onLoad: Function;
+  onError?: Function;
 }
 
 const styles: React.CSSProperties = {
@@ -20,6 +21,7 @@ const styles: React.CSSProperties = {
 
 const Image = ({
   onLoad,
+  onError,
   hasImageLoaded = false,
   title,
   alt,
@@ -27,6 +29,7 @@ const Image = ({
 }: ImageProps) => (
   <img
     onLoad={event => onLoad(event)}
+    onError={event => onError && onError(event)}  
     src={src}
     title={title}
     style={{

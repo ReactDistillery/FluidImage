@@ -6,8 +6,6 @@ import ThumbnailImage from "../ThumbnailImage";
 import Image from "../Image";
 import Placeholder from "../Placeholder";
 
-jest.mock("res");
-
 const minimalProps = {
   src: "testImage.jpeg",
   crop: [0, 0, 100, 100]

@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { create, ReactTestRenderer } from "react-test-renderer";
 import ThumbnailImage from "./";
 
 const minimalProps = {
@@ -15,6 +15,10 @@ const fullProps = {
   hideImageOnLoad: false,
   onLoad: () => {}
 };
+
+const findImg = (thumbnailImage: ReactTestRenderer) => (
+  thumbnailImage.root.findByType("img")
+);
 
 describe("FluidImage - ThumbnailImage", () => {
   test("Renders an img with minimal props", () => {
@@ -32,8 +36,15 @@ describe("FluidImage - ThumbnailImage", () => {
     const thumbnailImage = create(
       <ThumbnailImage {...minimalProps} onLoad={onLoad} />
     );
-    /* Had a lot of trouble getting onLoad to fire in Jest + JSDOM */
-    thumbnailImage.root.findByType("img").props.onLoad();
+    findImg(thumbnailImage).props.onLoad();
     expect(onLoad.mock.calls.length).toBe(1);
   });
+  test("it calls onError when image errors", () => {
+    const onError = jest.fn();
+    const thumbnailImage = create(
+      <ThumbnailImage {...fullProps} onError={onError} />
+    );
+    findImg(thumbnailImage).props.onError();
+    expect(onError.mock.calls.length).toBe(1);
+  })
 });

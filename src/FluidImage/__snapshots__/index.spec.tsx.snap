@@ -82,6 +82,7 @@ exports[`FluidImage - FluidImage render skeletons it renders with 0 from prop li
     <img
       alt={undefined}
       draggable={false}
+      onError={[Function]}
       onLoad={[Function]}
       src="testImage.jpeg?fit=crop&w=8&h=NaN&dpr=1&q=80&rect=0,0,100,100"
       style={
@@ -126,6 +127,7 @@ exports[`FluidImage - FluidImage render skeletons it renders with 1 from prop li
     <img
       alt="an image"
       draggable={false}
+      onError={[Function]}
       onLoad={[Function]}
       src="thumbnail-url-pattern"
       style={

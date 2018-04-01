@@ -4,12 +4,12 @@ import Measure, {
   BoundingRect,
   MeasuredComponentProps
 } from "react-measure";
-//@ts-ignore
-import * as res from "res";
+
 import Placeholder from "../Placeholder";
 import Image from "../Image";
 import ThumbnailImage from "../ThumbnailImage";
 import ErrorBoundary from "../ErrorBoundary";
+import { dppx } from '../utils';
 
 export interface FluidImageProps extends React.Props<any> {
   src: string;
@@ -88,7 +88,7 @@ export default class FluidImage extends React.Component<
       alt,
       title,
       crop,
-      pixelRatio = res.dppx() || 1,
+      pixelRatio = dppx(),
       quality = 80,
       pattern = defaultPattern,
       thumbnailSize = 8,

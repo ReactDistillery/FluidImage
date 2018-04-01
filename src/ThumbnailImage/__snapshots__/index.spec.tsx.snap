@@ -4,6 +4,7 @@ exports[`FluidImage - ThumbnailImage Renders an img with full props 1`] = `
 <img
   alt="some description"
   draggable={false}
+  onError={[Function]}
   onLoad={[Function]}
   src="testImage.jpeg"
   style={
@@ -24,6 +25,7 @@ exports[`FluidImage - ThumbnailImage Renders an img with minimal props 1`] = `
 <img
   alt={undefined}
   draggable={false}
+  onError={[Function]}
   onLoad={[Function]}
   src="testImage.jpeg"
   style={
