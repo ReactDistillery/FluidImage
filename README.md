@@ -7,6 +7,7 @@ React based component for efficiently and effectively displaying images
 #### In no particular order
 
 - Logic for plugable `<Image>`, `<ThumbnailImage>` and `<Placeholder>` components
+- Replace usage of crop for dimensions with height / width ratios. Crop is provider specific
 - Providers interface for popular image services e.g. [imgix](https://docs.imgix.com/apis/url)
 - Remove duplicated props usage in tests
 - NPM publishing scripts
