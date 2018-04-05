@@ -6,5 +6,4 @@ jobs:
     - stage: test
       script: yarn test
     - stage: build
-      script: yarn build
-      script: yarn bundlesize
+      script: yarn build && yarn bundlesize
