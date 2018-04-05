@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FluidImage - LazyFluidImage renders 1`] = `
+<span
+  data-fluid-image={true}
+  onChange={[Function]}
+>
+  <span
+    style={
+      Object {
+        "backgroundColor": "#f9f9f9",
+        "display": "inline-block",
+        "height": 0,
+        "lineHeight": 0,
+        "overflow": "hidden",
+        "paddingBottom": "100%",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  />
+</span>
+`;

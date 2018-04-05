@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+        "outDir": "./lib/",
+        "strictNullChecks": true,
+        "module": "commonjs",
+        "removeComments": true,
+        "moduleResolution": "node",
+        "allowJs": true,
+        "jsx": "react",
+        "target": "es5",
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "inlineSources": true,
+    },
+    "include": [
+        "./src/**/*",
+    ],
+    "exclude": [
+        "yarn.lock",
+        "node_modules",
+    ]
+}

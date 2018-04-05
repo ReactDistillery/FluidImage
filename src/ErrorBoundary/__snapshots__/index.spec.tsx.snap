@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FluidImage - ErrorBoundary should render \`Placeholder\` component when state hasError is true 1`] = `
+<span
+  style={
+    Object {
+      "backgroundColor": "#f9f9f9",
+      "display": "inline-block",
+      "height": 0,
+      "lineHeight": 0,
+      "overflow": "hidden",
+      "paddingBottom": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`FluidImage - ErrorBoundary should render children as standard 1`] = `
+<div>
+  child
+</div>
+`;
