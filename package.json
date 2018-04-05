@@ -6,6 +6,12 @@
   "repository": "git@github.com:ReactDistillery/FluidImage.git",
   "author": "lukemcinerney@mac.com",
   "license": "MIT",
+  "bundlesize": [
+    {
+      "path": "./dist/bundle.js",
+      "maxSize": "10 kB"
+    }
+  ],
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
     "@storybook/addon-links": "^3.3.15",
@@ -17,6 +23,7 @@
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "^4.0.1",
     "babel-core": "^6.26.0",
+    "bundlesize": "^0.17.0",
     "jest": "^22.4.2",
     "react-test-renderer": "^16.2.0",
     "source-map-loader": "^0.2.3",
@@ -39,6 +46,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "build": "webpack --env.NODE_ENV=production --config webpack.config.js"
+    "build": "webpack --env.NODE_ENV=production --config webpack.config.js",
+    "bundlesize": "bundlesize"
   }
 }
